@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #f0f4f8, #c9d6e3);
+    /* Soft gradient background */
+}
+
+.player {
+    background-color: #ffffff;
+    /* White background for the player */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow for depth */
+    padding: 20px;
+    text-align: center;
+    max-width: 90%;
+    width: 400px;
+    /* Responsive max-width */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s, transform 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.player:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    /* Deeper shadow on hover */
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+}
+
+audio {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    /* Blue background color */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    transform: scale(1.05);
+    /* Slight scale effect on hover */
+}
+
+button:active {
+    transform: scale(0.95);
+    /* Slight scale effect when clicked */
+}
+
+.info {
+    margin-top: 20px;
+    color: #555;
+    /* Slightly darker text for better readability */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .player {
+        width: 95%;
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
