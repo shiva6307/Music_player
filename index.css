@@ -6,13 +6,13 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to right, #f0f4f8, #c9d6e3);
-    /* Soft gradient background */
+    background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+    /* Soft pink to teal gradient background */
 }
 
 .player {
-    background-color: #ffffff;
-    /* White background for the player */
+    background-color: #f9f9f9;
+    /* Light grey background for the player */
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     /* Enhanced shadow for depth */
